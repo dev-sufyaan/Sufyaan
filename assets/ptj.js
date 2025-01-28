@@ -21,7 +21,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-
 const skillsContent = document.getElementsByClassName("skills__content"),
   skillsHeader = document.querySelectorAll(".skills__header");
 
@@ -39,8 +38,6 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
-
-
 
 /*const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]')
@@ -147,10 +144,10 @@ const getCurrentIcon = () =>
 
 if (selectedTheme) {
   document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    darkTheme,
+    darkTheme
   );
   themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
-    iconTheme,
+    iconTheme
   );
 }
 
